@@ -7,6 +7,8 @@ Created on Feb 28, 2017
 from util import port_is_open, getCreds
 from netmiko import NetMikoAuthenticationException
 from netmiko import NetMikoTimeoutException
+from netmiko import ConnectHandler
+from time import sleep
 import util, gvars
 
 def start_cli_session(handler= None,
@@ -81,7 +83,7 @@ def start_cli_session(handler= None,
                 )
                 
                 result['cred']= cred
-                print('Successful ssh auth to %s using %s, %s' % (ip, cred['user'], cred['password'][:2]))
+#                 print('Successful ssh auth to %s using %s, %s' % (ip, cred['user'], cred['password'][:2]))
                 
                 return result
     
@@ -109,7 +111,7 @@ def start_cli_session(handler= None,
                 )
                 
                 result['cred']= cred
-                print('Successful ssh auth to %s using %s, %s' % (ip, cred['user'], cred['password'][:2]))
+#                 print('Successful telnet auth to %s using %s, %s' % (ip, cred['user'], cred['password'][:2]))
                 
                 return result
             
@@ -147,8 +149,7 @@ def enable(connection, attempts= 3):
             sleep(i+2)
             continue
         else: 
-            print('Enable successful on attempt %s' % (str(i+1)))
-            
+#             print('Enable successful on attempt %s' % (str(i+1)))
             return True
         
 def connect_firewall(host, 
@@ -177,6 +178,14 @@ def connect_firewall(host,
     # Switch contexts   
     if context is not None: 
         print('Changing to context {}'.format(context))
-        connection.send_command('changeto context {}'.format(args.context))
+        connection.send_command('changeto context {}'.format(context))
     
     return connection  
+
+
+
+
+
+
+if __name__ == '__main__':
+    main()

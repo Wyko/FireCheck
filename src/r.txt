@@ -1,0 +1,45 @@
+
+Cisco Adaptive Security Appliance Software Version 9.6(2)1 <context>
+Device Manager Version 7.6(2)150
+
+Compiled on Thu 08-Sep-16 21:27 PDT by builders
+
+oh-mas-092-idmz-fd01 up 102 days 16 hours
+failover cluster up 102 days 16 hours
+
+Hardware:   ASA5585-SSP-10
+
+Licensed features for this user context:
+Failover                          : Active/Active  perpetual
+Encryption-DES                    : Enabled        perpetual
+Encryption-3DES-AES               : Enabled        perpetual
+Carrier                           : Disabled       perpetual
+AnyConnect Premium Peers          : 0              perpetual
+Other VPN Peers                   : 0              perpetual
+AnyConnect for Mobile             : Disabled       perpetual
+AnyConnect for Cisco VPN Phone    : Disabled       perpetual
+Advanced Endpoint Assessment      : Disabled       perpetual
+Botnet Traffic Filter             : Disabled       perpetual
+10GE I/O                          : Disabled       perpetual
+Cluster                           : Disabled       perpetual
+
+
+Failover cluster licensed features for this user context:
+Failover                          : Active/Active  perpetual
+Encryption-DES                    : Enabled        perpetual
+Encryption-3DES-AES               : Enabled        perpetual
+Carrier                           : Disabled       perpetual
+AnyConnect Premium Peers          : 0              perpetual
+Other VPN Peers                   : 0              perpetual
+AnyConnect for Mobile             : Disabled       perpetual
+AnyConnect for Cisco VPN Phone    : Disabled       perpetual
+Advanced Endpoint Assessment      : Disabled       perpetual
+Botnet Traffic Filter             : Disabled       perpetual
+10GE I/O                          : Disabled       perpetual
+Cluster                           : Disabled       perpetual
+
+
+Image type          : Release
+Key version         : A
+
+Configuration last modified by c1225304 at 14:02:21.868 EDT Thu Mar 30 2017
