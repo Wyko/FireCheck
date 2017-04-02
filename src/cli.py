@@ -170,8 +170,10 @@ def connect_firewall(host,
                       ip= host,
                       cred={'user': user,
                             'password': password,
-                            'type': None} ,
-                      port= 22)['connection']
+                            'type': None
+                            },
+                      port= 22
+                      )['connection']
         
     if not enable(connection): return False
     
